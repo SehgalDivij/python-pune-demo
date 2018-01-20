@@ -9,5 +9,5 @@ def identify(request):
     """
     Simple view to return my name
     """
-    return Response(data={'name': 'Divij Sehgal', 'occupation': 'Programming', 'reason': 'It\'s fun', 'age':22}, status=200)
+    return Response(data={'name': 'Divij Sehgal', 'occupation': 'Not Programming', 'reason': 'It\'s fun', 'age':22}, status=200)
 
