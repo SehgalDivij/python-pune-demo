@@ -14,4 +14,7 @@ class IdentityTest(APITestCase):
         url = reverse('identify_me')
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data, {'name': 'Divij Sehgal', 'occupation': 'Programming', 'reason': 'It\'s fun', 'age':22})
+        self.assertEqual(response.data, {
+        	'name': 'Divij Sehgal',
+        	'occupation': 'Programming',
+        	'reason': 'It\'s fun', 'age':22})
